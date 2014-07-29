@@ -11,7 +11,7 @@ public:
   typedef boost::shared_ptr<MessageES> Ptr;
 
 public:
-  MessageES(TcpSocket::Ptr);
+  explicit MessageES(TcpSocket::Ptr);
   virtual ~MessageES();
 
   void read(std::string&) const;

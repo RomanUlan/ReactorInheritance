@@ -10,7 +10,7 @@ public:
   typedef boost::shared_ptr<KeyboardES> Ptr;
 
 public:
-  KeyboardES(KeyboardSocket::Ptr);
+  explicit KeyboardES(KeyboardSocket::Ptr);
   virtual ~KeyboardES();
 
   void read(std::string&);

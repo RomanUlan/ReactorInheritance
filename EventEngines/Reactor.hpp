@@ -13,7 +13,7 @@ public:
   typedef boost::shared_ptr<Reactor> Ptr;
 
 public:
-  Reactor(EventDemultiplexer::Ptr);
+  explicit Reactor(EventDemultiplexer::Ptr);
   ~Reactor();
 
   void add(EventHandler::Ptr);

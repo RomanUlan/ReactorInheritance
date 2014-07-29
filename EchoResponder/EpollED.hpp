@@ -7,7 +7,7 @@
 class EpollED: public EventDemultiplexer
 {
 public:
-  EpollED(Epoll::Ptr);
+  explicit EpollED(Epoll::Ptr);
   ~EpollED();
 
 public:

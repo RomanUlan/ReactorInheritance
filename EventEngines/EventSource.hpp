@@ -20,7 +20,7 @@ public:
   const EventTypes& getEventTypes() const;
 
 protected:
-  EventSource(const EventTypes&);
+  explicit EventSource(const EventTypes&);
   EventSource(const EventSource&);
   EventSource& operator=(const EventSource&);
 

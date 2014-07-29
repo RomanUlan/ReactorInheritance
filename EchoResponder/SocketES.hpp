@@ -16,7 +16,7 @@ public:
   Socket::Ptr getSocket() const;
 
 protected:
-  SocketES(Socket::Ptr);
+  explicit SocketES(Socket::Ptr);
 
 protected:
   Socket::Ptr m_socket;

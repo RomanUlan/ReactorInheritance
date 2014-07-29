@@ -22,7 +22,7 @@ void AcceptorEH::handle(const EventSource::EventTypes& p_eventTypes)
   {
     ListenerES::Ptr listenerES = boost::dynamic_pointer_cast<ListenerES>(m_eventSource);
     MessageES::Ptr msgES = listenerES->accept();
-    EchoResponderEH::Ptr erEH(new EchoResponderEH(msgES));
+    EchoResponderEH::Ptr erEH(new EchoResponderEH(msgES, m_reactor));
     m_reactor.add(erEH);
   }
   else

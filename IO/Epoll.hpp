@@ -30,7 +30,7 @@ public:
   typedef std::vector<Event> Events;
 
 public:
-  Epoll(int p_size = 100);
+  explicit Epoll(int p_size = 100);
   virtual ~Epoll();
 
 private:

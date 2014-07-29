@@ -21,7 +21,7 @@ public:
 
 protected:
   Socket(int, int, int);
-  Socket(int);
+  explicit Socket(int);
   Socket(const Socket&);
   Socket& operator=(const Socket&);
 
